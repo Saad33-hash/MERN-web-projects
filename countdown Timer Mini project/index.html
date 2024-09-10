@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="I will create animated countdown timer video up to anytime.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Count Down Timer</title>
+</head>
+<body>
+    <div class="container">
+       <h2 class="countdown heading">Count Down Timer</h2>
+
+<div class="inputfields">
+    <label for="field1" class="field1label">Start Date:</label>
+<input type="datetime-local" id="field1" class="field1input" placeholder="5 sep,2024 H/M/S">
+<!-- second filed for end date -->
+<label for="field2" class="field2label">End Date:</label>
+<input type="datetime-local" id="field2" class="field2input" placeholder="5 sep,2024 H/M/S">
+
+
+</div>
+
+<div class="eventbutton">
+    <button class="eventbutton1">Start</button>
+</div>
+
+<div class="countdowncontainer">
+       <div >
+        <span class="days">00</span>
+        <span class="daysspan1">Days</span>
+       </div>
+       <div >
+        <span class="hours">00</span>
+        <span class="hoursspan1">Hours</span>
+       </div>
+       <div >
+        <span  class="minutes">00</span>
+        <span class="minspan1">Min</span>
+       </div>
+       <div >
+        <span class="seconds">00</span>
+        <span class="secondspan1">seconds</span>
+       </div>
+    </div>
+
+    <div class="proghead">
+<h2 class="progressheading">Progress</h2>
+</div>
+
+
+       <div class="progress">
+       <div class="progressbar"></div>
+       </div>
+<br>
+       <div class="reset">
+        <button class="resetbutton">Reset</button>
+    </div>
+    </div>
+
+
+
+    <script src="countdown.js"></script>
+</body>
+</html>
