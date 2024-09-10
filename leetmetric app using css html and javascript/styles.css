@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-gradient-color: #4b798d;
+    --second-gradient-color: #e2ebd1;
+    --third-gradient-color: #f7553e;
+}
+
+body {
+    background: linear-gradient(45deg, #495d66, #97b9b0); /* Sea Green */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentcontainer {
+    background: linear-gradient(180deg, #001f3f, #F0F8FF);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 20px;
+}
+
+.headingcontainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.leetheading {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-weight: 1000;
+    font-size: 2rem;
+    color: white;
+}
+
+.metricheading {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+#emailing {
+    background-color: #F0F8FF;
+    border-radius: 25px;
+    color: black;
+    font-weight: 500;
+    border: 2px solid black;
+}
+
+.searchbutton {
+    background-color: #001f3f;
+    color: #F0F8FF;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 2px solid black;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.circle1, .circle2, .circle3 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 10px solid #13121d;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    background: conic-gradient(
+        var(--first-gradient-color) 0% 0%, 
+        #13121d 0%
+    );
+}
+
+.circle1 {
+    background: conic-gradient(
+        var(--first-gradient-color) 0% 100%, 
+        #13121d 0%
+    );
+}
+
+.circle2 {
+    background: conic-gradient(
+        var(--second-gradient-color) 0% 100%, 
+        #13121d 0%
+    );
+}
+
+.circle3 {
+    background: conic-gradient(
+        var(--third-gradient-color) 0% 100%, 
+        #13121d 0%
+    );
+}
+
+.circle1 span, .circle2 span, .circle3 span {
+    position: relative;
+    z-index: 2;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px; /* Add space between cards */
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.cardsclass {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
+    text-align: center; /* Center the text */
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and basis */
+    max-width: 300px; /* Maximum width for each card */
+    transition: transform 0.2s ease-in-out; /* Smooth transform on hover */
+}
+
+.cardsclass:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+}
+
+.cardsclass h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+}
+
+.cardsclass p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Primary color for emphasis */
+}
